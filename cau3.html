@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ma = ['a', 'o', 'e', 'u', 'i']
+    let nhap = prompt()
+    let check = true
+
+    function tim(nhap) {
+
+        let c = 0;
+        let nhan = nhap.split('')
+        console.log(nhan)
+        for (let z = 0; z < nhan.length; z++) {
+
+            if (ma.indexOf(nhan[z]) !== -1) {
+                check = false
+                c++
+            }
+        }
+        if (check === false) {
+            return c
+        }
+        if (check === true) {
+            return false
+        }
+
+    }
+
+    console.log(tim(nhap))
+
+</script>
+</body>
+</html>
